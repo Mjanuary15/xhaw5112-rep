@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Book / Quote | Next Level Gaming</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header"><div class="container nav-wrap"><a class="logo" href="index.html"><span class="logo-mark">N</span><span>Next Level<br><small>Gaming & Esports Arena</small></span></a><button class="menu-btn" id="menuBtn">☰</button><nav class="nav" id="mainNav"><a href="index.html">Home</a><a href="about.html">About</a><a href="packages.html">Packages</a><a href="experiences.html">Experiences</a><a class="active" href="booking.html">Book / Quote</a><a href="contact.html">Contact</a></nav></div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">BOOKING & QUOTATION</p><h1>Build your <span>quote.</span></h1><p>Select one or more experiences. Your discount and VAT are calculated automatically.</p></div></section>
+<section class="section"><div class="container booking-layout">
+<form class="form-card" id="bookingForm" action="https://formspree.io/f/mnppwgge" method="POST" novalidate>
+<h2>Your details</h2>
+<input type="hidden" name="_subject" value="New booking request from Next Level Gaming website">
+<div class="form-grid"><label>Full name<input id="name" name="name" type="text" required placeholder="Enter your name"></label><label>Phone number<input id="phone" name="phone" type="tel" required placeholder="e.g. 071 000 0000"></label><label>Email address<input id="email" name="email" type="email" required placeholder="you@example.com"></label><label>Customer type<select id="customerType" name="customerType"><option>Individual</option><option>Family</option><option>School</option><option>Gaming Club</option><option>Business</option></select></label></div>
+<h2>Select bookings</h2>
+<div class="selection-list">
+<label class="selection"><input type="checkbox" data-price="1500" value="Ultimate Gamer Pass"><span>Ultimate Gamer Pass</span><strong>R1 500</strong></label>
+<label class="selection"><input type="checkbox" data-price="1500" value="VIP Gaming Experience"><span>VIP Gaming Experience</span><strong>R1 500</strong></label>
+<label class="selection"><input type="checkbox" data-price="1500" value="Esports Training Package"><span>Esports Training Package</span><strong>R1 500</strong></label>
+<label class="selection"><input type="checkbox" data-price="1500" value="Birthday Party Package"><span>Birthday Party Package</span><strong>R1 500</strong></label>
+<label class="selection"><input type="checkbox" data-price="750" value="Virtual Reality Experience"><span>Virtual Reality Experience</span><strong>R750</strong></label>
+<label class="selection"><input type="checkbox" data-price="750" value="Racing Simulator Challenge"><span>Racing Simulator Challenge</span><strong>R750</strong></label>
+<label class="selection"><input type="checkbox" data-price="750" value="Escape Room Challenge"><span>Escape Room Challenge</span><strong>R750</strong></label>
+</div>
+<div class="error-msg" id="selectionError"></div>
+<div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+<button class="btn primary full" type="submit">Submit Booking Request</button>
+<p class="small-note">This is a student project quotation interface. It does not process a real payment.</p>
+</form>
+
+<aside class="quote-card">
+<p class="eyebrow">LIVE QUOTE</p><h2>Your quotation</h2>
+<div id="selectedItems" class="selected-items"><p>No bookings selected yet.</p></div>
+<div class="quote-row"><span>Subtotal</span><strong id="subtotal">R0.00</strong></div>
+<div class="quote-row"><span>Discount</span><strong id="discount">R0.00</strong></div>
+<div class="quote-row"><span>VAT (15%)</span><strong id="vat">R0.00</strong></div>
+<div class="quote-total"><span>Total</span><strong id="total">R0.00</strong></div>
+<div class="discount-message" id="discountMessage">Select bookings to unlock discounts.</div>
+</aside>
+</div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><h3>Next Level</h3><p>Gaming & Esports Arena</p></div><div><p>Johannesburg, South Africa</p></div><div><p>© 2026 Next Level Gaming</p></div></div></footer>
+<script src="script.js"></script></body></html>
